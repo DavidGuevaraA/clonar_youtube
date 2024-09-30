@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+}
+:root{
+  --blanco:#ffffff;
+  --base:#000000;
+}
+/* layaut */
+body{
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows:56px 1fr;
+  height: 100vh;
+  grid-template-areas:
+  'header header'
+  'sidebar content';
+}
+
+img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:contain
+}
+
+a{
+  text-decoration: none;
+  font-size:0.9rem;
+  color:var(--blanco);
+}
+
+h1{
+font-size: 1.5rem;
+}
+
+.header{
+  grid-area:header;
+  position: fixed;
+  top: 0;
+  left:0;
+  background-color: var(--base);
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidebar-left{
+  grid-area:sidebar-left;
+  background-color: var(--base);
+}
+.content{
+  grid-area:content;
+  
+}
+
+/* HEADER */
+
+.logo-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:6;
+}
+
+.logo{
+display: flex;
+flex-direction: row;
+gap: 6px;
+}
+.logo-img{
+  position: relative;
+  height: 25px;
+  width: 30px;
+}
+.logo h1{
+color: var(--blanco);
+letter-spacing: -1px;
+
+}
+.search-busqueda{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border: white;
+  min-width: 30px;
+
+}
+
+
+.search-container input{
+  height: 40px;
+  width: 100px;
+  color: #ffffff;
+}
+.busqueda{
+  min-width: 200px;
+  background-color: #000000;
+  color: #ffffff;
+  height: 35px;
+  width: 400px;
+  border-radius: 40px 0 0 40px;
+  border: solid 1px;
+  border-right: none;
+  margin-top: 1px;
+}
+
+.buscador{
+  background-color: #000000;
+  color: #ffffff;
+  width: 36px;
+  height: 35px;
+  margin: 1px;
+  border: solid 0.5px;
+  border-radius:0 40px 40px 0;
+  position: absolute;
+  cursor: pointer;
+  border-left: none;
+}
+
+.Boton-microfono{
+  background-color: #74717188;
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  margin: 1px;
+  border-radius: 30px;
+  position: relative;
+  left: 70px;
+  cursor: pointer;
+  
+}
+.Boton-microfono:hover{
+  background-color: #a2a2a2ad;
+}
+.derecha{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.perfil{
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  por
+}
