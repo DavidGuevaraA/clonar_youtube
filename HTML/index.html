@@ -1,54 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/CSS/estilos.css">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link rel="stylesheet" href="../CSS/Youtube_adelantado.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"
+/>  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-<body> 
-  <!-- header -->
+
+<body>
   <header class="header">
+    <!--Contenedor logo-->
     <div class="logo-container">
-      <a href="#">  
-        <i class="ri-menu-line menu"> </i>
+
+      <a href="#">
+        <i class='bx bx-menu'></i>
       </a>
       <div class="logo">
-        <img src="/img/logo.png" alt="Logo-Youtube" class="logo-img">
-        <h1 >YouTube</h1>
+        <div class="logo-img">
+          <img src="../img/logo.png" alt="logo">
+        </div>
+        <h1>YouTube</h1>
       </div>
     </div>
-    <!-- Barra de busqueda -->
-    <div class="search-busqueda">
-      <form action="action">
-        <input class="busqueda" type="text" placeholder="  Busqueda">
-        <button class="buscador">
-          <i class="ri-search-line buscadors"></i>
+
+    <!-- Contenedor busqueda -->
+    <div class="search-content">
+      <form action="">
+        <input type="text" placeholder="Buscar">
+        <button>
+          <i class='bx bx-search'></i>
         </button>
       </form>
-      <button class="Boton-microfono">
-        <i class="ri-mic-line"></i>
+      <button class="content_microfono"><i class='bx bx-microphone'></i>
       </button>
-      <div class="Derecha">
-        <button>
-          <i class="ri-video-add-line"></i>
-        </button>
-        <button>
-          <i class="ri-notification-4-line"></i>
-        </button>
-        <img src="/img/img-17.jpg" alt="perrito" class="perfil">
-      </div>
+    </div>
+    <!-- Creador Perfil -->
+    <div class="profile-container">
+      <a href="#">
+        <i class='bx bx-video-plus'></i>
+      </a>
+      <a href="#">
+        <i class='bx bx-bell'></i>
+      </a>
+
+        <div class="profile-box">
+             <img src ="../img/img-14.jpg" alt="perfil">
+        </div>
+    </div>
+
     </div>
   </header>
 
-  <aside class="sidebar"></aside>
+  <aside class="sidebar-left">
+    <div class="sidebar-items">
+      <a href="#" class="sidebar-item"><i class="ri-home-5-line"></i><samp>Home</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-compass-3-line"></i><samp>Explore</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-wireless-charging-line"></i><samp>Shorts</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-rss-line"></i><samp>Subcripciones</samp></a>
+    
+    <hr class="hr">
 
+      <a href="#" class="sidebar-item"><i class="ri-links-line"></i><samp>Libary</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-chat-history-line"></i><samp>History</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-video-line"></i><samp>Your videos</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-time-line"></i><samp>Watch videos</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-play-list-2-line"></i><samp>All videos</samp></a>
+      <a href="#"class="sidebar-item"><i class="ri-arrow-down-line"></i></i><samp>Show more</samp></a>
+
+    <hr class="hr">
+
+    <h4 class="MAS-DE-YOUTUBE"> MORE FROM YOUTUBE</h4>
+
+    <a href="#"class="sidebar-item"><i class="ri-keyboard-box-line"></i><samp>Gaming</samp></a>
+    <a href="#"class="sidebar-item"><i class="ri-live-line"></i><samp>Live</samp></a>
+    <a href="#"class="sidebar-item"><i class="ri-award-line"></i><samp>Show more</samp></a>
+
+    <hr class="hr">
+    <a href="#"class="sidebar-item"><i class="ri-settings-2-line"></i><samp>Setting</samp></a>
+    <a href="#"class="sidebar-item"><i class="ri-flag-line"></i><samp>Report History</samp></a>
+    <a href="#"class="sidebar-item"><i class="ri-question-line"></i><samp>Help</samp></a>
+    <a href="#"class="sidebar-item"><i class="ri-feedback -line"></i><samp>Send Feedbakc</samp></a>
+
+    <hr class="hr">
+
+    <div class="menu-intermedio">
+    </div>
+    </div>
+  </aside>
   <main class="content"></main>
-
-  
 </body>
+
 </html>
